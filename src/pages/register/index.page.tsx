@@ -8,7 +8,7 @@ import { z } from 'zod'
 import { AxiosError } from 'axios'
 
 import { api } from '@/lib/axios'
-import { Form, FormError, Header, RegisterContainer } from './styles'
+import { Container, Form, FormError, Header } from './styles'
 
 const registerFormSchema = z.object({
   username: z
@@ -47,6 +47,8 @@ export default function Register() {
         name: data.name,
         username: data.username,
       })
+
+      await router.push('/register/connect-calendar')
     } catch (err) {
       if (err instanceof AxiosError && err?.response?.data?.message) {
         return alert(err.response.data.message)
@@ -57,7 +59,7 @@ export default function Register() {
   }
 
   return (
-    <RegisterContainer>
+    <Container>
       <Header>
         <Heading as="strong">Bem-vindo ao Ignite Call!</Heading>
         <Text>
@@ -96,6 +98,6 @@ export default function Register() {
           <ArrowRight />
         </Button>
       </Form>
-    </RegisterContainer>
+    </Container>
   )
 }
