@@ -3,7 +3,7 @@
 </h1>
 
 <p align="center">
-  O <b>Ignite Call</b> é o projeto desenvolvido no quinto módulo do curso Ignite ReactJS da Rocketseat. Esta aplicação permite a criação de eventos personalizados no calendário do usuário. Você pode registrar sua disponibilidade em determinados dias e horários e compartilhar essas informações com outras pessoas.
+  <b>Ignite Call</b> is a scheduling app that allows users to create personalized events in their calendar. You can set your availability on specific days and times and share this information with others.
 </p>
 
 ---
@@ -49,43 +49,43 @@
 
 ---
 
-# :information_source: Como Executar?
+# :information_source: How to run?
 
-> **1.0.** Clone o Repositório:
+> **1.0.** Clone this repository:
 
 ```bash
 https://github.com/keyyuwan/ignite-call.git
 
 ```
 
-> **1.1.** Informe as variáveis de ambiente
+> **1.1.** Inform the environment variables
 
 ```bash
 cp .env.example .env.local
 ```
 
-> **1.2.** Instale as dependências:
+> **1.2.** Install the dependencies:
 
 ```bash
 npm install
 ```
 
-> **1.3.** Inicie o Projeto:
+> **1.3.** Run the project:
 
 ```bash
 npm run dev
 ```
 
-> ➡️ Acesse [http://localhost:3000](http://localhost:3000) para acessar a aplicação web.
+> ➡️ Access [http://localhost:3000](http://localhost:3000) to view the project on a web browser.
 
 
-# :rocket: Tecnologias
+# :rocket: Techs
 
 - [React](https://pt-br.reactjs.org/)
 - [NextJS](https://vitejs.dev/)
 - [TypeScript](https://www.typescriptlang.org/)
 - [Phosphor Icons](https://phosphoricons.com/)
-- [ihenris UI](https://github.com/tavareshenrique/ihenrits-ui)
+- [Ignite UI](https://github.com/keyyuwan/ignite-ui)
 - [Axios](https://www.npmjs.com/package/axios)
 - [DayJS](https://day.js.org/)
 - [Google APIS](https://github.com/googleapis/google-api-nodejs-client)
